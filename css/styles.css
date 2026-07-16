@@ -1674,13 +1674,84 @@ section {
     gap: 20px;
   }
 
+  .process-head {
+    margin-bottom: 40px;
+  }
+
+  /* Timeline horizontal en mobile: en vez de convertirse en una lista vertical
+     (mucho scroll), se mantiene como una fila de 4 pasos de igual ancho que
+     se recorre con scroll horizontal nativo (estilo carrusel, sin JS extra).
+     Cada .process-step pasa a grid interno solo para superponer el número
+     dentro del círculo (ver .step-icon/.step-number). No aplica a
+     .process-steps--six (Sobre mí/servicios usan sus propias reglas, con
+     mayor especificidad, y no se ven afectadas). */
   .process-steps {
-    grid-template-columns: 1fr;
-    gap: 36px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    padding-bottom: 12px;
   }
 
   .process-steps::before {
     display: none;
+  }
+
+  .process-step {
+    display: grid;
+    grid-template-areas: "icon" "title" "text";
+    row-gap: 10px;
+    flex: 0 0 78%;
+    scroll-snap-align: start;
+  }
+
+  .step-icon {
+    grid-area: icon;
+    margin-bottom: 0;
+  }
+
+  .step-icon svg {
+    display: none;
+  }
+
+  .step-number {
+    grid-area: icon;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+  }
+
+  .process-step h3 {
+    grid-area: title;
+    margin-bottom: 0;
+  }
+
+  .process-step p {
+    grid-area: text;
+  }
+
+  /* Línea conectora propia de cada paso: une el borde del círculo con el
+     siguiente paso. Reemplaza la línea única del desktop (que se
+     desalinearía con el scroll horizontal) y se dibuja igual que ella,
+     reutilizando el mismo .is-drawn que agrega el IntersectionObserver
+     existente en script.js (sin cambios de JS). */
+  .process-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 60px;
+    width: calc(100% - 60px + 20px);
+    height: 1px;
+    background: repeating-linear-gradient(90deg, var(--border) 0 10px, transparent 10px 18px);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 1s var(--ease);
+  }
+
+  .process-steps.is-drawn .process-step:not(:last-child)::after {
+    transform: scaleX(1);
   }
 
   .cta-box {
