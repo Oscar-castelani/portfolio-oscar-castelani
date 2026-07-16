@@ -1700,6 +1700,22 @@ section {
 
   .hero {
     padding-top: calc(var(--nav-height) + 40px);
+    padding-bottom: 64px;
+  }
+
+  /* Mobile: se ocultan las ilustraciones de los 3 slides del Hero (mockups
+     de laptop/teléfono) para priorizar el mensaje y evitar scroll antes de
+     leerlo. Se usa display:none (no visibility) para no reservar su espacio.
+     El carrusel (JS) sigue funcionando igual: solo deja de haber contenido
+     visual que mostrar/animar por slide. Desktop y tablet no se tocan. */
+  .hero-visual {
+    display: none;
+  }
+
+  .hero-nav {
+    bottom: -40px;
+    width: 36px;
+    height: 36px;
   }
 
   .services-grid {
