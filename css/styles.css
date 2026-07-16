@@ -1685,19 +1685,16 @@ section {
     margin-bottom: 40px;
   }
 
-  /* Timeline horizontal en mobile: en vez de convertirse en una lista vertical
-     (mucho scroll), se mantiene como una fila de 4 pasos de igual ancho que
-     se recorre con scroll horizontal nativo (estilo carrusel, sin JS extra).
-     Cada .process-step pasa a grid interno solo para superponer el número
-     dentro del círculo (ver .step-icon/.step-number). No aplica a
-     .process-steps--six (Sobre mí/servicios usan sus propias reglas, con
-     mayor especificidad, y no se ven afectadas). */
+  /* Lista vertical compacta en mobile: cada paso es una fila circulo+texto
+     (número dentro del círculo, título y descripción a la derecha), apiladas
+     una debajo de otra. Reemplaza el scroll horizontal (poco intuitivo en
+     pantallas chicas) sin tocar desktop, que sigue siendo el grid de 4
+     columnas con la línea punteada. No aplica a .process-steps--six (Sobre
+     mí/servicios usan sus propias reglas, con mayor especificidad). */
   .process-steps {
     display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x proximity;
-    padding-bottom: 12px;
+    flex-direction: column;
+    gap: 28px;
   }
 
   .process-steps::before {
@@ -1706,14 +1703,17 @@ section {
 
   .process-step {
     display: grid;
-    grid-template-areas: "icon" "title" "text";
-    row-gap: 10px;
-    flex: 0 0 78%;
-    scroll-snap-align: start;
+    grid-template-columns: 60px 1fr;
+    column-gap: 16px;
+    row-gap: 4px;
+    grid-template-areas:
+      "icon title"
+      "icon text";
   }
 
   .step-icon {
     grid-area: icon;
+    align-self: center;
     margin-bottom: 0;
   }
 
@@ -1737,28 +1737,6 @@ section {
 
   .process-step p {
     grid-area: text;
-  }
-
-  /* Línea conectora propia de cada paso: une el borde del círculo con el
-     siguiente paso. Reemplaza la línea única del desktop (que se
-     desalinearía con el scroll horizontal) y se dibuja igual que ella,
-     reutilizando el mismo .is-drawn que agrega el IntersectionObserver
-     existente en script.js (sin cambios de JS). */
-  .process-step:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 34px;
-    left: 60px;
-    width: calc(100% - 60px + 20px);
-    height: 1px;
-    background: repeating-linear-gradient(90deg, var(--border) 0 10px, transparent 10px 18px);
-    transform: scaleX(0);
-    transform-origin: left center;
-    transition: transform 1s var(--ease);
-  }
-
-  .process-steps.is-drawn .process-step:not(:last-child)::after {
-    transform: scaleX(1);
   }
 
   .cta-box {
