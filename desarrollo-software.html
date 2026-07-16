@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desarrollo de Software a Medida | Oscar Castelani</title>
+  <meta name="description" content="Aplicaciones web y móviles, sistemas de gestión e integraciones a medida, pensados para el proceso real de tu negocio." />
+  <meta name="author" content="Oscar Castelani" />
+  <link rel="canonical" href="https://oscarcastelani.com/desarrollo-software.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Oscar Castelani" />
+  <meta property="og:title" content="Desarrollo de Software a Medida | Oscar Castelani" />
+  <meta property="og:description" content="Aplicaciones web y móviles, sistemas de gestión e integraciones a medida, pensados para el proceso real de tu negocio." />
+  <meta property="og:url" content="https://oscarcastelani.com/desarrollo-software.html" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:image" content="https://oscarcastelani.com/assets/og-cover.jpg" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Desarrollo de Software a Medida | Oscar Castelani" />
+  <meta name="twitter:description" content="Aplicaciones web y móviles, sistemas de gestión e integraciones a medida, pensados para el proceso real de tu negocio." />
+  <meta name="twitter:image" content="https://oscarcastelani.com/assets/og-cover.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Navbar
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html#inicio" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+            <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+          </svg>
+        </span>
+        OSCAR <span>CASTELANI</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="servicios.html" class="active">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html#contacto" class="btn btn-primary">Hablemos</a>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero
+         ========================================================================== -->
+    <section class="service-hero">
+      <div class="container">
+        <div class="service-hero-copy">
+          <a href="index.html#servicios" class="back-link reveal">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+            Volver al inicio
+          </a>
+          <p class="eyebrow reveal">Desarrollo de Software a Medida</p>
+          <h1 class="reveal">Desarrollo de <span class="text-orange">Software a Medida</span></h1>
+          <p class="lead reveal">Aplicaciones web y móviles, sistemas de gestión e integraciones desarrollados a medida, pensados para el proceso real de tu negocio.</p>
+        </div>
+
+        <div class="service-hero-visual reveal" aria-hidden="true">
+          <div class="laptop">
+            <div class="laptop-screen">
+              <div class="screen-nav">
+                <div class="dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="screen-content">
+                <p class="tag">Solución a medida</p>
+                <h3>Software que se adapta a <span class="text-orange">tu forma de trabajar.</span></h3>
+                <p>Una herramienta única, escalable y pensada para tu caso real.</p>
+              </div>
+              <span class="glow-line l1"></span>
+              <span class="glow-line l2"></span>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ¿Qué puedo desarrollar?
+         ========================================================================== -->
+    <section class="automation-platforms">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">El servicio</p>
+          <h2>¿Qué puedo <span class="text-orange">desarrollar?</span></h2>
+          <p class="lead">Cuando las herramientas genéricas no alcanzan, construyo una solución propia: pensada para tus procesos, tus datos y tu manera de trabajar.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card platform-card reveal">
+            <span class="platform-logo">
+              <svg width="52" height="52" viewBox="0 0 52 52">
+                <rect x="2" y="2" width="48" height="48" rx="14" fill="var(--orange)"/>
+                <g transform="translate(15,16)" stroke="#0a0a0a" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="0" y="0" width="22" height="17" rx="2"/>
+                  <path d="M0 5h22"/>
+                  <path d="M7 11l-2 2 2 2M15 11l2 2-2 2"/>
+                </g>
+              </svg>
+            </span>
+            <h3>Aplicaciones web</h3>
+            <p>Plataformas a medida accesibles desde cualquier navegador, sin instalar nada.</p>
+          </article>
+
+          <article class="service-card platform-card reveal reveal-delay-1">
+            <span class="platform-logo">
+              <svg width="52" height="52" viewBox="0 0 52 52">
+                <rect x="2" y="2" width="48" height="48" rx="14" fill="var(--orange)"/>
+                <g transform="translate(18,14)" stroke="#0a0a0a" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="0" y="0" width="16" height="24" rx="3"/>
+                  <path d="M6.5 20h3"/>
+                </g>
+              </svg>
+            </span>
+            <h3>Aplicaciones móviles</h3>
+            <p>Apps pensadas para usarse desde el celular, por vos o por tus clientes.</p>
+          </article>
+
+          <article class="service-card platform-card reveal reveal-delay-2">
+            <span class="platform-logo">
+              <svg width="52" height="52" viewBox="0 0 52 52">
+                <rect x="2" y="2" width="48" height="48" rx="14" fill="var(--orange)"/>
+                <g transform="translate(15,15)" stroke="#0a0a0a" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="11" cy="4" rx="9" ry="3"/>
+                  <path d="M2 4v14c0 1.7 4 3 9 3s9-1.3 9-3V4"/>
+                  <path d="M2 11c0 1.7 4 3 9 3s9-1.3 9-3"/>
+                </g>
+              </svg>
+            </span>
+            <h3>Sistemas de gestión</h3>
+            <p>Stock, pedidos, clientes o turnos: todo ordenado en un solo lugar.</p>
+          </article>
+
+          <article class="service-card platform-card reveal">
+            <span class="platform-logo">
+              <svg width="52" height="52" viewBox="0 0 52 52">
+                <rect x="2" y="2" width="48" height="48" rx="14" fill="var(--orange)"/>
+                <g transform="translate(15,15)" stroke="#0a0a0a" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 1v20h20"/>
+                  <path d="M5 15l4-5 3 3 5-7"/>
+                </g>
+              </svg>
+            </span>
+            <h3>Paneles y dashboards</h3>
+            <p>Visualizá la información clave de tu negocio en tiempo real.</p>
+          </article>
+
+          <article class="service-card platform-card reveal reveal-delay-1">
+            <span class="platform-logo">
+              <svg width="52" height="52" viewBox="0 0 52 52">
+                <rect x="2" y="2" width="48" height="48" rx="14" fill="var(--orange)"/>
+                <g transform="translate(15,15)" stroke="#0a0a0a" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="5" cy="5" r="3"/>
+                  <circle cx="17" cy="17" r="3"/>
+                  <path d="M7 7l8 8"/>
+                  <path d="M17 8V5h-3M5 14v3h3"/>
+                </g>
+              </svg>
+            </span>
+            <h3>Integraciones</h3>
+            <p>Conecto las herramientas que ya usás para que trabajen juntas.</p>
+          </article>
+
+          <article class="service-card platform-card reveal reveal-delay-2">
+            <span class="platform-logo">
+              <svg width="52" height="52" viewBox="0 0 52 52">
+                <rect x="2" y="2" width="48" height="48" rx="14" fill="var(--orange)"/>
+                <g transform="translate(15,15)" stroke="#0a0a0a" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 1l4 4-4 4"/>
+                  <path d="M2 10V8a4 4 0 0 1 4-4h14"/>
+                  <path d="M6 21l-4-4 4-4"/>
+                  <path d="M20 12v2a4 4 0 0 1-4 4H2"/>
+                </g>
+              </svg>
+            </span>
+            <h3>Automatizaciones a medida</h3>
+            <p>Procesos internos automatizados para ahorrar tiempo y evitar errores.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ¿Por qué software a medida?
+         ========================================================================== -->
+    <section class="advisory-why">
+      <div class="container">
+        <div class="advisory-why-grid">
+          <div class="advisory-why-statement reveal">
+            <p class="eyebrow">¿Por qué a medida?</p>
+            <h2>Cuando la herramienta genérica <span class="text-orange">no alcanza</span></h2>
+            <p class="lead">Muchos negocios terminan adaptando su forma de trabajar a un software que no fue hecho para ellos. Una solución a medida hace lo contrario: se ajusta a tu proceso real, elimina lo que sobra y suma exactamente lo que necesitás.</p>
+          </div>
+
+          <ul class="advisory-why-list reveal reveal-delay-1">
+            <li><span class="advisory-why-index">01</span>Se adapta a tu proceso, no al revés</li>
+            <li><span class="advisory-why-index">02</span>Elimina tareas manuales repetitivas</li>
+            <li><span class="advisory-why-index">03</span>Centraliza la información en un solo lugar</li>
+            <li><span class="advisory-why-index">04</span>Escala a medida que el negocio crece</li>
+            <li><span class="advisory-why-index">05</span>Reduce errores y planillas sueltas</li>
+            <li><span class="advisory-why-index">06</span>La solución queda a tu nombre</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Cómo trabajo
+         ========================================================================== -->
+    <section class="process">
+      <div class="container">
+        <div class="section-head process-head reveal">
+          <p class="eyebrow">Metodología</p>
+          <h2>Cómo <span class="text-orange">trabajo</span></h2>
+        </div>
+
+        <div class="process-steps process-steps--six">
+          <div class="process-row reveal">
+            <div class="process-step reveal">
+              <span class="step-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle class="ic-mass" cx="11" cy="6" r="4"/><path d="M3 21v-1a8 8 0 0 1 8-8h0a8 8 0 0 1 8 8v1"/></svg>
+              </span>
+              <span class="step-number">01</span>
+              <h3>Entiendo tu necesidad</h3>
+              <p>Analizo el problema real que querés resolver y cómo trabajás hoy.</p>
+            </div>
+
+            <div class="process-step reveal reveal-delay-1">
+              <span class="step-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect class="ic-mass" x="5" y="3" width="14" height="18" rx="2"/><rect class="ic-mass" x="9" y="1" width="6" height="4" rx="1"/><path d="M8 11h8M8 15h5"/></svg>
+              </span>
+              <span class="step-number">02</span>
+              <h3>Defino el alcance</h3>
+              <p>Acordamos qué incluye la solución, tiempos y prioridades.</p>
+            </div>
+
+            <div class="process-step reveal reveal-delay-2">
+              <span class="step-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path class="ic-mass" d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <span class="step-number">03</span>
+              <h3>Diseño la solución</h3>
+              <p>Planifico la estructura, la experiencia de uso y la tecnología adecuada.</p>
+            </div>
+          </div>
+
+          <div class="process-row reveal">
+            <div class="process-step reveal">
+              <span class="step-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+              </span>
+              <span class="step-number">04</span>
+              <h3>Desarrollo</h3>
+              <p>Construyo la aplicación con foco en que sea clara, rápida y confiable.</p>
+            </div>
+
+            <div class="process-step reveal reveal-delay-1">
+              <span class="step-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle class="ic-mass" cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <span class="step-number">05</span>
+              <h3>Pruebo y ajusto</h3>
+              <p>Verifico que todo funcione y afino los detalles con tu feedback.</p>
+            </div>
+
+            <div class="process-step reveal reveal-delay-2">
+              <span class="step-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path class="ic-mass" d="M3 11v2a1 1 0 0 0 1 1h3l5 4V6l-5 4H4a1 1 0 0 0-1 1z"/><path d="M18 8a4 4 0 0 1 0 8"/></svg>
+              </span>
+              <span class="step-number">06</span>
+              <h3>Entrego y acompaño</h3>
+              <p>Te entrego la solución funcionando y doy soporte para su evolución.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Beneficios
+         ========================================================================== -->
+    <section class="benefits">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Beneficios</p>
+          <h2>Qué <span class="text-orange">ganás</span> con una solución a medida</h2>
+        </div>
+
+        <div class="benefit-feature-grid">
+          <article class="benefit-feature-card reveal">
+            <div class="benefit-feature-header">
+              <span class="benefit-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 1-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 1 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z"/></svg>
+              </span>
+              <h3>Una herramienta que se adapta a tu proceso</h3>
+            </div>
+            <p>El software se ajusta a tu forma de trabajar, no al revés.</p>
+          </article>
+
+          <article class="benefit-feature-card reveal reveal-delay-1">
+            <div class="benefit-feature-header">
+              <span class="benefit-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+              </span>
+              <h3>Escalable: crece con tu negocio</h3>
+            </div>
+            <p>Podés sumar funciones a medida que aparecen nuevas necesidades.</p>
+          </article>
+
+          <article class="benefit-feature-card reveal">
+            <div class="benefit-feature-header">
+              <span class="benefit-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </span>
+              <h3>Automatizás tareas manuales</h3>
+            </div>
+            <p>Menos trabajo repetitivo y menos errores en el día a día.</p>
+          </article>
+
+          <article class="benefit-feature-card reveal reveal-delay-1">
+            <div class="benefit-feature-header">
+              <span class="benefit-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+              </span>
+              <h3>Todo tu negocio en un solo lugar</h3>
+            </div>
+            <p>Información centralizada en vez de planillas y apps dispersas.</p>
+          </article>
+
+          <article class="benefit-feature-card reveal">
+            <div class="benefit-feature-header">
+              <span class="benefit-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <h3>Sos dueño de la solución</h3>
+            </div>
+            <p>La aplicación y sus datos quedan a tu nombre, sin ataduras.</p>
+          </article>
+
+          <article class="benefit-feature-card reveal reveal-delay-1">
+            <div class="benefit-feature-header">
+              <span class="benefit-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21l8.84-8.61a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </span>
+              <h3>Soporte y mejoras continuas</h3>
+            </div>
+            <p>Acompañamiento después de la entrega para que crezca con vos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Ideal para...
+         ========================================================================== -->
+    <section class="audience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">¿Es para vos?</p>
+          <h2>Ideal <span class="text-orange">para...</span></h2>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card reveal">
+            <span class="audience-check">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            Negocios con procesos propios que no encajan en apps genéricas
+          </div>
+          <div class="audience-card reveal reveal-delay-1">
+            <span class="audience-check">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            Emprendimientos que necesitan una app a medida
+          </div>
+          <div class="audience-card reveal reveal-delay-2">
+            <span class="audience-check">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            Comercios que quieren gestionar stock, pedidos o turnos
+          </div>
+          <div class="audience-card reveal">
+            <span class="audience-check">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            Negocios que hoy usan planillas y necesitan algo más robusto
+          </div>
+          <div class="audience-card reveal reveal-delay-1">
+            <span class="audience-check">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            Profesionales que necesitan automatizar tareas
+          </div>
+          <div class="audience-card reveal reveal-delay-2">
+            <span class="audience-check">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            Empresas que quieren integrar las herramientas que ya usan
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CTA final
+         ========================================================================== -->
+    <section class="cta" id="contacto-software">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-text">
+            <h2>¿Necesitás una solución <span class="text-orange">a medida?</span></h2>
+            <p>Contame qué querés resolver y evaluamos juntos la mejor forma de construirlo.</p>
+          </div>
+          <div class="cta-actions">
+            <a
+              class="btn btn-primary"
+              href="#"
+              target="_blank"
+              rel="noopener"
+              data-whatsapp-message="Hola Oscar, quiero desarrollar una solución de software a medida para mi negocio."
+            >
+              Quiero mi solución a medida
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.93 1.38-.49.08-1.1.11-1.78-.11-.41-.13-.94-.3-1.61-.6-2.84-1.23-4.69-4.12-4.83-4.31-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.36c.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.89 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.61-.07.16-.19.68-.79.86-1.06.18-.28.35-.23.6-.14.24.09 1.55.73 1.82.86.26.14.44.2.5.32.07.12.07.68-.17 1.35z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html#inicio" class="brand">
+            <span class="brand-mark" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+              </svg>
+            </span>
+            OSCAR <span>CASTELANI</span>
+          </a>
+          <p>Ecosistemas digitales: estrategia, tecnología y diseño para hacer crecer tu negocio.</p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
+            <li><a href="automatizaciones.html">Automatización de Procesos</a></li>
+            <li><a href="publicidad-redes-sociales.html">Publicidad en Redes Sociales</a></li>
+            <li><a href="desarrollo-software.html">Desarrollo de Software a Medida</a></li>
+            <li><a href="asesorias.html">Asesorías Digitales</a></li>
+            <li><a href="optimizacion-redes-sociales.html">Optimización de Redes Sociales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Seguime</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/oscar.castelani/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+              data-whatsapp-message="Hola Oscar, quiero más información."
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.93 1.38-.49.08-1.1.11-1.78-.11-.41-.13-.94-.3-1.61-.6-2.84-1.23-4.69-4.12-4.83-4.31-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.36c.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.89 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.61-.07.16-.19.68-.79.86-1.06.18-.28.35-.23.6-.14.24.09 1.55.73 1.82.86.26.14.44.2.5.32.07.12.07.68-.17 1.35z"/></svg>
+            </a>
+            <a href="mailto:hola@oscarcastelani.com" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year"></span> Oscar Castelani. Todos los derechos reservados.</span>
+        <a href="privacidad.html" class="footer-legal-link">Política de privacidad</a>
+        <span>Hecho con estrategia, tecnología y diseño.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Botón flotante de WhatsApp
+       ========================================================================== -->
+  <a
+    class="whatsapp-float"
+    href="#"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+    data-whatsapp-message="Hola Oscar, estuve viendo tu sitio y quiero hacerte una consulta sobre mi proyecto."
+  >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.93 1.38-.49.08-1.1.11-1.78-.11-.41-.13-.94-.3-1.61-.6-2.84-1.23-4.69-4.12-4.83-4.31-.14-.19-1.16-1.54-1.16-2.94s.73-2.08 1-2.36c.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.89 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.61-.07.16-.19.68-.79.86-1.06.18-.28.35-.23.6-.14.24.09 1.55.73 1.82.86.26.14.44.2.5.32.07.12.07.68-.17 1.35z"/></svg>
+    <span class="whatsapp-float-text">¿Hablamos?</span>
+  </a>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/analytics.js"></script>
+</body>
+</html>
