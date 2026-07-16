@@ -1558,6 +1558,13 @@ section {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  /* En una sola columna, priorizar la conversión: el formulario pasa a
+     verse primero (antes que beneficios/WhatsApp) sin tocar el HTML ni el
+     grid de 2 columnas de desktop, que no se ve afectado por `order`. */
+  .contact-form-card {
+    order: -1;
+  }
 }
 
 @media (max-width: 640px) {
