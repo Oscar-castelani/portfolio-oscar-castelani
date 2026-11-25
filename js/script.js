@@ -116,9 +116,10 @@
     }
   }
 
-  /* Formulario de contacto (Home): envío AJAX a Formspree con feedback de
-     éxito/error, sin recargar la página. El endpoint se lee del atributo
-     `action` del <form> (único punto de edición en el HTML). */
+  /* Formulario de contacto (Home): envío AJAX a Netlify Forms con feedback de
+     éxito/error, sin recargar la página. Netlify procesa cualquier POST que
+     incluya el campo `form-name`; por eso enviamos el formulario codificado
+     como application/x-www-form-urlencoded hacia la ruta del atributo `action`. */
   const contactForm = document.querySelector("[data-contact-form]");
   if (contactForm) {
     const statusEl = contactForm.querySelector("[data-form-status]");
@@ -141,16 +142,7 @@
         return;
       }
 
-      const endpoint = contactForm.getAttribute("action") || "";
-
-      /* Guarda: si todavía no se configuró el endpoint de Formspree */
-      if (endpoint.includes("YOUR_FORM_ID")) {
-        setStatus(
-          "El formulario todavía no está configurado. Mientras tanto, escribime por WhatsApp.",
-          "error"
-        );
-        return;
-      }
+      const endpoint = contactForm.getAttribute("action") || "/";
 
       const originalLabel = submitBtn.textContent;
       submitBtn.disabled = true;
@@ -160,8 +152,8 @@
       try {
         const response = await fetch(endpoint, {
           method: "POST",
-          body: new FormData(contactForm),
-          headers: { Accept: "application/json" },
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(new FormData(contactForm)).toString(),
         });
 
         if (response.ok) {
